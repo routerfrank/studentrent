@@ -1,5 +1,5 @@
 angular.module('firebase.config', [])
-  .constant('FBURL', 'https://studentrent-prod.firebaseio.com')
-  .constant('SIMPLE_LOGIN_PROVIDERS', ['password'])
+  .constant('FBURL', 'https://studentrent-dev.firebaseio.com')
+  .constant('SIMPLE_LOGIN_PROVIDERS', ['password','facebook'])
 
   .constant('loginRedirectPath', '/login');

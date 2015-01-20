@@ -1,6 +1,6 @@
 
 <div class="row-fluid">
-<div class="col-md-4">
+<div class="{{user.provider === 'password'? 'col-md-4' : 'col-md-12'}}">
   <h3>Profile</h3>
 
   <form role="form">
@@ -25,7 +25,7 @@
   </p>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4" ng-show="{{user.provider === 'password'}}">
 <form role="form">
   <h3>Change Password</h3>
 
@@ -51,7 +51,7 @@
 </form>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4" ng-show="{{user.provider === 'password'}}">
 <form>
   <h3>Change Email</h3>
 

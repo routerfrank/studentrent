@@ -8,6 +8,16 @@
  */
 angular.module('rentApp')
   .controller('LoginCtrl', function ($scope, simpleLogin, $location) {
+    $scope.oauthLogin = function(provider) {
+      $scope.err = null;
+      simpleLogin.login(provider, {rememberMe: true}).then(redirect, showError);
+    };
+
+    $scope.anonymousLogin = function() {
+      $scope.err = null;
+      simpleLogin.anonymousLogin({rememberMe: true}).then(redirect, showError);
+    };
+
     $scope.passwordLogin = function(email, pass) {
       $scope.err = null;
       simpleLogin.passwordLogin({email: email, password: pass}, {rememberMe: true}).then(

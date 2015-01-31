@@ -1,8 +1,9 @@
 {
-  
   "name": "rent",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "toastr": "^2.0.4"
+  },
   "devDependencies": {
     "chalk": "^0.4.0",
     "grunt": "^0.4.5",

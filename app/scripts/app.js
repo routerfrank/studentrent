@@ -17,5 +17,6 @@ angular.module('rentApp', [
     'ngTouch',
     'firebase',
     'firebase.utils',
-    'simpleLogin'
+    'simpleLogin',
+    'angularFileUpload'
   ]);

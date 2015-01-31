@@ -81,6 +81,10 @@ angular.module('rentApp')
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
       })
+      .when('/rent', {
+        templateUrl: 'views/rent.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

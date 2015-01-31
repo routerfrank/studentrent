@@ -1,0 +1,84 @@
+doctype html(lang='en')
+head
+    title Realestate Bootstrap Theme 
+    |   
+    meta(charset='UTF-8')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |   
+    link(rel='stylesheet', href='assets/bootstrap/css/bootstrap.css')
+    |   
+    link(rel='stylesheet', href='assets/style.css')
+    |   
+    script(src='http://code.jquery.com/jquery-1.9.1.min.js')
+    |   
+    script(src='assets/bootstrap/js/bootstrap.js')
+    |   
+    script(src='assets/script.js')
+    // Owl stylesheet
+    link(rel='stylesheet', href='assets/owl-carousel/owl.carousel.css')
+    |   
+    link(rel='stylesheet', href='assets/owl-carousel/owl.theme.css')
+    |   
+    script(src='assets/owl-carousel/owl.carousel.js')
+    // Owl stylesheet
+    // slitslider
+    link(rel='stylesheet', type='text/css', href='assets/slitslider/css/style.css')
+    |   
+    link(rel='stylesheet', type='text/css', href='assets/slitslider/css/custom.css')
+    |   
+    script(type='text/javascript', src='assets/slitslider/js/modernizr.custom.79639.js')
+    |   
+    script(type='text/javascript', src='assets/slitslider/js/jquery.ba-cond.min.js')
+    |   
+    script(type='text/javascript', src='assets/slitslider/js/jquery.slitslider.js')
+    // slitslider
+  body
+    // Header Starts
+    .navbar-wrapper
+      .navbar-inverse(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              |             
+              span.icon-bar
+              |             
+              span.icon-bar
+              |             
+              span.icon-bar
+          // Nav Starts
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+              li.active
+                a(href='index.php') Home
+              |             
+              li
+                a(href='about.php') About
+              |             
+              li
+                a(href='agents.php') Agents
+              |             
+              li
+                a(href='blog.php') Blog
+              |             
+              li
+                a(href='contact.php') Contact
+          // #Nav Ends
+    // #Header Starts
+    .container
+      // Header Starts
+      .header
+        a(href='index.php')
+          img(src='images/logo.png', alt='Realestate')
+        |       
+        ul.pull-right
+          li
+            a(href='buysalerent.php') Buy
+          |         
+          li
+            a(href='buysalerent.php') Sale
+          |         
+          li
+            a(href='buysalerent.php') Rent
+      // #Header Starts

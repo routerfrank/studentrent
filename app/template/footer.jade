@@ -1,0 +1,99 @@
+.footer
+    .container
+        .row
+          .col-lg-3.col-sm-3
+            h4 Information
+            |         
+            ul.row
+              li.col-lg-12.col-sm-12.col-xs-3
+                a(href='about.php') About
+              |           
+              li.col-lg-12.col-sm-12.col-xs-3
+                a(href='agents.php') Agents
+              |           
+              li.col-lg-12.col-sm-12.col-xs-3
+                a(href='blog.php') Blog
+              |           
+              li.col-lg-12.col-sm-12.col-xs-3
+                a(href='contact.php') Contact
+          |       
+          .col-lg-3.col-sm-3
+            h4 Newsletter
+            |         
+            p Get notified about the latest properties in our marketplace.
+            |         
+            form.form-inline(role='form')
+              input.form-control(type='text', placeholder='Enter Your email address')
+              |           
+              button.btn.btn-success(type='button') Notify Me!
+          |       
+          .col-lg-3.col-sm-3
+            h4 Follow us
+            |         
+            a(href='#')
+              img(src='images/facebook.png', alt='facebook')
+            |         
+            a(href='#')
+              img(src='images/twitter.png', alt='twitter')
+            |         
+            a(href='#')
+              img(src='images/linkedin.png', alt='linkedin')
+            |         
+            a(href='#')
+              img(src='images/instagram.png', alt='instagram')
+          |       
+          .col-lg-3.col-sm-3
+            h4 Contact us
+            |         
+            p
+              b Bootstrap Realestate Inc.
+              |           
+              br
+              |           
+              span.glyphicon.glyphicon-map-marker
+              |  8290 Walk Street, Australia
+              |           
+              br
+              |           
+              span.glyphicon.glyphicon-envelope
+              |  hello@bootstrapreal.com
+              |           
+              br
+              |           
+              span.glyphicon.glyphicon-earphone
+              |  (123) 456-7890
+        |     
+        p.copyright Copyright 2013. All rights reserved. 
+    // Modal
+    #loginpop.modal.fade
+      .modal-dialog
+        .modal-content
+          .row
+            .col-sm-6.login
+              h4 Login
+              |           
+              form(role='form')
+                .form-group
+                  label.sr-only(for='exampleInputEmail2') Email address
+                  |               
+                  input#exampleInputEmail2.form-control(type='email', placeholder='Enter email')
+                |             
+                .form-group
+                  label.sr-only(for='exampleInputPassword2') Password
+                  |               
+                  input#exampleInputPassword2.form-control(type='password', placeholder='Password')
+                |             
+                .checkbox
+                  label
+                    input(type='checkbox')
+                    |  Remember me
+                |             
+                button.btn.btn-success(type='submit') Sign in
+            |         
+            .col-sm-6
+              h4 New User Sign Up
+              |           
+              p Join today and get updated with all the properties deal happening around.
+              |           
+              button.btn.btn-info(type='submit', onclick="window.location.href='register.php'") Join Now
+    // /.modal

@@ -1,0 +1,462 @@
+include header.jade
+div
+  #slider.sl-slider-wrapper
+    .sl-slider
+      .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+        .sl-slide-inner
+          .bg-img.bg-img-1
+          |           
+          h2
+            a(href='#') 2 Bed Rooms and 1 Dinning Room Aparment on Sale
+          |           
+          blockquote
+            p.location
+              span.glyphicon.glyphicon-map-marker
+              |  1890 Syndey, Australia
+            |             
+            p
+              | Until he extends the circle of his compassion to all living things, man will not himself find peace.
+            |             
+            cite $ 20,000,000
+      |       
+      .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+        .sl-slide-inner
+          .bg-img.bg-img-2
+          |           
+          h2
+            a(href='#') 2 Bed Rooms and 1 Dinning Room Aparment on Sale
+          |           
+          blockquote
+            p.location
+              span.glyphicon.glyphicon-map-marker
+              |  1890 Syndey, Australia
+            |             
+            p
+              | Until he extends the circle of his compassion to all living things, man will not himself find peace.
+            |             
+            cite $ 20,000,000
+      |       
+      .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+        .sl-slide-inner
+          .bg-img.bg-img-3
+          |           
+          h2
+            a(href='#') 2 Bed Rooms and 1 Dinning Room Aparment on Sale
+          |           
+          blockquote
+            p.location
+              span.glyphicon.glyphicon-map-marker
+              |  1890 Syndey, Australia
+            |             
+            p
+              | Until he extends the circle of his compassion to all living things, man will not himself find peace.
+            |             
+            cite $ 20,000,000
+      |       
+      .sl-slide(data-orientation='vertical', data-slice1-rotation='-5', data-slice2-rotation='25', data-slice1-scale='2', data-slice2-scale='1')
+        .sl-slide-inner
+          .bg-img.bg-img-4
+          |           
+          h2
+            a(href='#') 2 Bed Rooms and 1 Dinning Room Aparment on Sale
+          |           
+          blockquote
+            p.location
+              span.glyphicon.glyphicon-map-marker
+              |  1890 Syndey, Australia
+            |             
+            p
+              | Until he extends the circle of his compassion to all living things, man will not himself find peace.
+            |             
+            cite $ 20,000,000
+      |       
+      .sl-slide(data-orientation='horizontal', data-slice1-rotation='-5', data-slice2-rotation='10', data-slice1-scale='2', data-slice2-scale='1')
+        .sl-slide-inner
+          .bg-img.bg-img-5
+          |           
+          h2
+            a(href='#') 2 Bed Rooms and 1 Dinning Room Aparment on Sale
+          |           
+          blockquote
+            p.location
+              span.glyphicon.glyphicon-map-marker
+              |  1890 Syndey, Australia
+            |             
+            p
+              | Until he extends the circle of his compassion to all living things, man will not himself find peace.
+            |             
+            cite $ 20,000,000
+    //- /sl-slider
+    nav#nav-dots.nav-dots
+      span.nav-dot-current
+      |       
+      span
+      |       
+      span
+      |       
+      span
+      |       
+      span
+  //- /slider-wrapper
+.banner-search
+  .container
+    // banner
+    h3 Buy, Sale &amp; Rent
+    |     
+    .searchbar
+      .row
+        .col-lg-6.col-sm-6
+          input.form-control(type='text', placeholder='Search of Properties')
+          |           
+          .row
+            .col-lg-3.col-sm-3
+              select.form-control
+                option Buy
+                |                 
+                option Rent
+                |                 
+                option Sale
+            |             
+            .col-lg-3.col-sm-4
+              select.form-control
+                option Price
+                |                 
+                option $150,000 - $200,000
+                |                 
+                option $200,000 - $250,000
+                |                 
+                option $250,000 - $300,000
+                |                 
+                option $300,000 - above
+            |             
+            .col-lg-3.col-sm-4
+              select.form-control
+                option Property
+                |                 
+                option Apartment
+                |                 
+                option Building
+                |                 
+                option Office Space
+            |             
+            .col-lg-3.col-sm-4
+              button.btn.btn-success(onclick="window.location.href='buysalerent.php'") Find Now
+        |         
+        .col-lg-5.col-lg-offset-1.col-sm-6
+          p Join now and get updated with all the properties deals.
+          |           
+          button.btn.btn-info(data-toggle='modal', data-target='#loginpop') Login
+//- banner
+.container
+  .properties-listing.spacer
+    a.pull-right.viewall(href='buysalerent.php') View All Listing
+    |     
+    h2 Featured Properties
+    |     
+    #owl-example.owl-carousel
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/1.jpg', alt='properties')
+          |           
+          .status.sold Sold
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/2.jpg', alt='properties')
+          |           
+          .status.new New
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/3.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/4.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/1.jpg', alt='properties')
+          |           
+          .status.sold Sold
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/2.jpg', alt='properties')
+          |           
+          .status.sold Sold
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/3.jpg', alt='properties')
+          |           
+          .status.new New
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/4.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/1.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/2.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+      |       
+      .properties
+        .image-holder
+          img.img-responsive(src='images/properties/3.jpg', alt='properties')
+        |         
+        h4
+          a(href='property-detail.php') Royal Inn
+        |         
+        p.price Price: $234,900
+        |         
+        .listing-detail
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+          |  
+          span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+        |         
+        a.btn.btn-primary(href='property-detail.php') View Details
+  |   
+  .spacer
+    .row
+      .col-lg-6.col-sm-9.recent-view
+        h3 About Us
+        |         
+        p
+          | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          br
+          a(href='about.php') Learn More
+      |       
+      .col-lg-5.col-lg-offset-1.col-sm-3.recommended
+        h3 Recommended Properties
+        |         
+        #myCarousel.carousel.slide
+          ol.carousel-indicators
+            li.active(data-target='#myCarousel', data-slide-to='0')
+            |             
+            li(data-target='#myCarousel', data-slide-to='1')
+            |             
+            li(data-target='#myCarousel', data-slide-to='2')
+            |             
+            li(data-target='#myCarousel', data-slide-to='3')
+          //- Carousel items
+          .carousel-inner
+            .item.active
+              .row
+                .col-lg-4
+                  img.img-responsive(src='images/properties/1.jpg', alt='properties')
+                |                 
+                .col-lg-8
+                  h5
+                    a(href='property-detail.php') Integer sed porta quam
+                  |                   
+                  p.price $300,000
+                  |                   
+                  a.more(href='property-detail.php') More Detail
+            |             
+            .item
+              .row
+                .col-lg-4
+                  img.img-responsive(src='images/properties/2.jpg', alt='properties')
+                |                 
+                .col-lg-8
+                  h5
+                    a(href='property-detail.php') Integer sed porta quam
+                  |                   
+                  p.price $300,000
+                  |                   
+                  a.more(href='property-detail.php') More Detail
+            |             
+            .item
+              .row
+                .col-lg-4
+                  img.img-responsive(src='images/properties/3.jpg', alt='properties')
+                |                 
+                .col-lg-8
+                  h5
+                    a(href='property-detail.php') Integer sed porta quam
+                  |                   
+                  p.price $300,000
+                  |                   
+                  a.more(href='property-detail.php') More Detail
+            |             
+            .item
+              .row
+                .col-lg-4
+                  img.img-responsive(src='images/properties/4.jpg', alt='properties')
+                |                 
+                .col-lg-8
+                  h5
+                    a(href='property-detail.php') Integer sed porta quam
+                  |                   
+                  p.price $300,000
+                  |                   
+                  a.more(href='property-detail.php') More Detail
+include footer.jade

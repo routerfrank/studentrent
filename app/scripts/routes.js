@@ -58,7 +58,8 @@ angular.module('rentApp')
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: './',
+        // templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
 
@@ -85,7 +86,7 @@ angular.module('rentApp')
         templateUrl: 'views/rent.html',
         controller: 'MainCtrl'
       })
-      .otherwise({redirectTo: '/'});
+      .otherwise({redirectTo: './'});
   }])
 
   /**

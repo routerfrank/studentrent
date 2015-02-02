@@ -9,6 +9,8 @@
 
 module.exports = function (grunt) {
 
+  grunt.loadNpmTasks('grunt-jade');
+
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -211,6 +213,20 @@ module.exports = function (grunt) {
       }
     },
 
+    //Jade build
+    jade: {
+      compile: {
+        options: {
+          client: false,
+          pretty: true,
+          basePath: '<%= yeoman.app %>/template/'
+        },
+        files: {
+          '<%= yeoman.app %>': '<%= yeoman.app %>/template/*.jade',
+        }
+      }
+    },
+
     // The following *-min tasks will produce minified files in the dist folder
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
@@ -367,6 +383,7 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
+      'jade',
       'autoprefixer',
       'connect:livereload',
       'watch'
@@ -391,6 +408,7 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
+    'jade',
     'autoprefixer',
     'concat',
     'ngAnnotate',

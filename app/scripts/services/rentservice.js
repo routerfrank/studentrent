@@ -1,7 +1,9 @@
+'use strict';
+
 angular.module('rentApp')
   .service('RentService', function (FBURL, $firebase) {
   	var rootRef = new Firebase(FBURL),
-  		rentRef = rootRef.child("rents")
+  		rentRef = rootRef.child("rents");
     return {
     	create:function(rent){
     		var rentObj = {
@@ -16,8 +18,5 @@ angular.module('rentApp')
     		};
     	return $firebase(rentRef).$push(rentObj); 
     	}
-
-    }
-
-
+    };
   });

@@ -8,23 +8,23 @@ var Firebase = require("firebase");
 var rootRef = null;
 var fbAuthToken = null;
 
-if(process.env.NODE_ENV === 'production') {
-  rootRef = new Firebase("https://incandescent-heat-4351.firebaseio.com/");
-  fbAuthToken = "oJV0I8wM92Wn7L6oxehtnZ4pWSI2T4gQpT5zyDy3";
-}
-else {
-  rootRef = new Firebase("https://faceandela-dev.firebaseio.com/");
-  fbAuthToken = "vqyUAlkoupI7401C6AxXDdkdVL1C05jn5IooBYsr";
-}
+// if(process.env.NODE_ENV === 'production') {
+//   rootRef = new Firebase("https://incandescent-heat-4351.firebaseio.com/");
+//   fbAuthToken = "oJV0I8wM92Wn7L6oxehtnZ4pWSI2T4gQpT5zyDy3";
+// }
+// else {
+//   rootRef = new Firebase("https://faceandela-dev.firebaseio.com/");
+//   fbAuthToken = "vqyUAlkoupI7401C6AxXDdkdVL1C05jn5IooBYsr";
+// }
 
-rootRef.authWithCustomToken(fbAuthToken,
- function(error, authData) {
-  if (error) {
-    console.log("Login Failed!", error);
-  } else {
-    console.log("Login Succeeded!", authData);
-  }
-});
+// rootRef.authWithCustomToken(fbAuthToken,
+//  function(error, authData) {
+//   if (error) {
+//     console.log("Login Failed!", error);
+//   } else {
+//     console.log("Login Succeeded!", authData);
+//   }
+// });
 
 
 (function run() {
@@ -74,7 +74,7 @@ rootRef.authWithCustomToken(fbAuthToken,
 
 
   // Fire up server
-  var server = app.listen(process.env.PORT || 5555, function() {
+  var server = app.listen(process.env.PORT || 5000, function() {
     console.log('Listening on port %d', server.address().port);
   });
 

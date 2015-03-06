@@ -1,0 +1,26 @@
+include header
+//- banner
+.inside-banner
+  .container
+    span.pull-right
+      a(href='#') Home
+      |  / Register
+    |     
+    h2 Register
+//- banner
+.container
+  .spacer
+    .row.register
+      .col-lg-6.col-lg-offset-3.col-sm-6.col-sm-offset-3.col-xs-12
+        input.form-control(type='text', placeholder='Full Name', name='form_name')
+        |         
+        input.form-control(type='text', placeholder='Enter Email', name='form_email')
+        |         
+        input.form-control(type='password', placeholder='Password', name='form_phone')
+        |         
+        input.form-control(type='password', placeholder='Confirm Password', name='form_phone')
+        |         
+        textarea.form-control(rows='6', placeholder='Address', name='form_message')
+        |         
+        button.btn.btn-success(type='submit', name='Submit') Register
+include footer

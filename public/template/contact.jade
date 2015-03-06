@@ -1,0 +1,27 @@
+include header
+.inside-banner
+  .container
+    span.pull-right
+      a(href='#') Home
+      |  / Contact Us
+    |     
+    h2 Contact Us
+//- banner
+.container
+  .spacer
+    .row.contact
+      .col-lg-6.col-sm-6
+        input.form-control(type='text', placeholder='Full Name')
+        |         
+        input.form-control(type='text', placeholder='Email Address')
+        |         
+        input.form-control(type='text', placeholder='Contact Number')
+        |         
+        textarea.form-control(rows='6', placeholder='Message')
+        |         
+        button.btn.btn-success(type='submit', name='Submit') Send Message
+      |       
+      .col-lg-6.col-sm-6
+        .well
+          iframe(width='100%', height='300', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Pulchowk,+Patan,+Central+Region,+Nepal&aq=0&oq=pulch&sll=37.0625,-95.677068&sspn=39.371738,86.572266&ie=UTF8&hq=&hnear=Pulchowk,+Patan+Dhoka,+Patan,+Bagmati,+Central+Region,+Nepal&ll=27.678236,85.316853&spn=0.001347,0.002642&t=m&z=14&output=embed')
+include footer

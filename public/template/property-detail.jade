@@ -1,0 +1,172 @@
+include header
+//- banner
+.inside-banner
+  .container
+    span.pull-right
+      a(href='#') Home
+      |  / Buy
+    |     
+    h2 Buy
+//- banner
+.container
+  .properties-listing.spacer
+    .row
+      .col-lg-3.col-sm-4.hidden-xs
+        .hot-properties.hidden-xs
+          h4 Hot Properties
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/4.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/1.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/3.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/2.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+        |         
+        .advertisement
+          h4 Advertisements
+          |           
+          img.img-responsive(src='images/advertisements.jpg', alt='advertisement')
+      |       
+      .col-lg-9.col-sm-8
+        h2 2 room and 1 kitchen apartment
+        |         
+        .row
+          .col-lg-8
+            .property-images
+              // Slider Starts
+              #myCarousel.carousel.slide(data-ride='carousel')
+                // Indicators
+                ol.carousel-indicators.hidden-xs
+                  li.active(data-target='#myCarousel', data-slide-to='0')
+                  |                   
+                  li(data-target='#myCarousel', data-slide-to='1')
+                  |                   
+                  li(data-target='#myCarousel', data-slide-to='2')
+                  |                   
+                  li(data-target='#myCarousel', data-slide-to='3')
+                |                 
+                .carousel-inner
+                  // Item 1
+                  .item.active
+                    img.properties(src='images/properties/4.jpg', alt='properties')
+                  // #Item 1
+                  // Item 2
+                  .item
+                    img.properties(src='images/properties/2.jpg', alt='properties')
+                  // #Item 2
+                  // Item 3
+                  .item
+                    img.properties(src='images/properties/1.jpg', alt='properties')
+                  // #Item 3
+                  // Item 4
+                  .item
+                    img.properties(src='images/properties/3.jpg', alt='properties')
+                  // # Item 4
+                |                 
+                a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left
+                |                 
+                a.right.carousel-control(href='#myCarousel', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right
+              //- #Slider Ends
+            |             
+            .spacer
+              h4
+                span.glyphicon.glyphicon-th-list
+                |  Properties Detail
+              |               
+              p
+                | Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+              |               
+              p
+                | Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service
+            |             
+            div
+              h4
+                span.glyphicon.glyphicon-map-marker
+                |  Location
+              |               
+              .well
+                iframe(width='100%', height='350', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Pulchowk,+Patan,+Central+Region,+Nepal&aq=0&oq=pulch&sll=37.0625,-95.677068&sspn=39.371738,86.572266&ie=UTF8&hq=&hnear=Pulchowk,+Patan+Dhoka,+Patan,+Bagmati,+Central+Region,+Nepal&ll=27.678236,85.316853&spn=0.001347,0.002642&t=m&z=14&output=embed')
+          |           
+          .col-lg-4
+            .col-lg-12.col-sm-6
+              .property-info
+                p.price $ 200,000,000
+                |                 
+                p.area
+                  span.glyphicon.glyphicon-map-marker
+                  |  344 Villa, Syndey, Australia
+                |                 
+                .profile
+                  span.glyphicon.glyphicon-user
+                  |  Agent Details
+                  |                   
+                  p
+                    | John Parker
+                    br
+                    | 009 229 2929
+              |               
+              h6
+                span.glyphicon.glyphicon-home
+                |  Availabilty
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+            |             
+            .col-lg-12.col-sm-6
+              .enquiry
+                h6
+                  span.glyphicon.glyphicon-envelope
+                  |  Post Enquiry
+                |                 
+                form(role='form')
+                  input.form-control(type='text', placeholder='Full Name')
+                  |                   
+                  input.form-control(type='text', placeholder='you@yourdomain.com')
+                  |                   
+                  input.form-control(type='text', placeholder='your number')
+                  |                   
+                  textarea.form-control(rows='6', placeholder='Whats on your mind?')
+                  |                   
+                  button.btn.btn-primary(type='submit', name='Submit') Send Message
+include footer

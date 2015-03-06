@@ -1,0 +1,422 @@
+include header
+//- banner
+.inside-banner
+  .container
+    span.pull-right
+      a(href='index.html') Home
+      |  / Buy, Sale &amp; Rent
+    |     
+    h2 Buy, Sale &amp; Rent
+//- banner
+.container
+  .properties-listing.spacer
+    .row
+      .col-lg-3.col-sm-4
+        .search-form
+          h4
+            span.glyphicon.glyphicon-search
+            |  Search for
+          |           
+          input.form-control(type='text', placeholder='Search of Properties')
+          |           
+          .row
+            .col-lg-5
+              select.form-control
+                option Buy
+                |                 
+                option Rent
+                |                 
+                option Sale
+            |             
+            .col-lg-7
+              select.form-control
+                option Price
+                |                 
+                option $150,000 - $200,000
+                |                 
+                option $200,000 - $250,000
+                |                 
+                option $250,000 - $300,000
+                |                 
+                option $300,000 - above
+          |           
+          .row
+            .col-lg-12
+              select.form-control
+                option Property Type
+                |                 
+                option Apartment
+                |                 
+                option Building
+                |                 
+                option Office Space
+          |           
+          button.btn.btn-primary Find Now
+        |         
+        .hot-properties.hidden-xs
+          h4 Hot Properties
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/1.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/1.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/1.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+          |           
+          .row
+            .col-lg-4.col-sm-5
+              img.img-responsive.img-circle(src='images/properties/1.jpg', alt='properties')
+            |             
+            .col-lg-8.col-sm-7
+              h5
+                a(href='property-detail.html') Integer sed porta quam
+              |               
+              p.price $300,000
+      |       
+      .col-lg-9.col-sm-8
+        .sortby.clearfix
+          .pull-left.result Showing: 12 of 100 
+          |           
+          .pull-right
+            select.form-control
+              option Sort by
+              |               
+              option Price: Low to High
+              |               
+              option Price: High to Low
+        |         
+        .row
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/1.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/2.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/3.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/1.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/4.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/1.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/4.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/3.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/2.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/1.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/4.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          //- properties
+          .col-lg-4.col-sm-6
+            .properties
+              .image-holder
+                img.img-responsive(src='images/properties/3.jpg', alt='properties')
+                |                 
+                .status.sold Sold
+              |               
+              h4
+                a(href='property-detail.html') Royal Inn
+              |               
+              p.price Price: $234,900
+              |               
+              .listing-detail
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Bed Room') 5
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Living Room') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Parking') 2
+                |  
+                span(data-toggle='tooltip', data-placement='bottom', data-original-title='Kitchen') 1
+              |               
+              a.btn.btn-primary(href='property-detail.html') View Details
+          //- properties
+          .center
+            ul.pagination
+              li
+                a(href='#') &laquo;
+              |               
+              li
+                a(href='#') 1
+              |               
+              li
+                a(href='#') 2
+              |               
+              li
+                a(href='#') 3
+              |               
+              li
+                a(href='#') 4
+              |               
+              li
+                a(href='#') 5
+              |               
+              li
+                a(href='#') &raquo;
+include footer

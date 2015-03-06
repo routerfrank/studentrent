@@ -25,7 +25,6 @@ var paths = {
   jade: 'app/**/*.jade',
   scripts: 'app/**/*.js',
   staticFiles: [
-    '!app/**/*.+(less|css|js|jade)',
     'app/**/*.*'
   ]
 };

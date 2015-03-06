@@ -1,0 +1,35 @@
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" ng-model="rent.name" placeholder="Enter space name">
+  </div>
+  <div class="form-group">
+    <label for="location">Location</label>
+    <input type="text" class="form-control" id="location"   ng-model="rent.location" placeholder="location">
+  </div>
+  <div class="form-group">
+    <label for="full_address">Full Address</label>
+    <input type="text" class="form-control" id="full_address" placeholder="address"  ng-model="rent.full_address">
+  </div>
+  <div class="form-group">
+    <label for="size">Size</label>
+    <input type="text" class="form-control" id="size" placeholder="size"  ng-model="rent.size">
+  </div>
+  <div class="form-group">
+    <label for="cost">Cost</label>
+    <input type="text" class="form-control" id="cost" placeholder="cost"  ng-model="rent.cost">
+  </div>
+  <div class="form-group">
+    <label for="type">Type</label>
+    <input type="text" class="form-control" id="type" placeholder="type"  ng-model="rent.type">
+  </div>
+  <div class="form-group">
+    <label for="condition">Condition</label>
+    <input type="text" class="form-control" id="condition" placeholder="condition" ng-model="rent.condition">
+  </div>
+
+  <input type="file" ng-file-select ng-model="myFiles" ng-file-change="fileSelected($files, $event)" ng-multiple="false" accept="image/*,*.pdf,*.xml">Upload</input>
+  <input type="submit" ng-click="onFileSelect()">
+
+  <button type="submit" class="btn btn-default"  ng-click="createRent(rent, myFiles)">Submit</button>
+</form>

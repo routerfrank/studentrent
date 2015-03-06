@@ -58,13 +58,17 @@ angular.module('rentApp')
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: './',
-        // templateUrl: 'views/main.html',
+        templateUrl: 'index.html',
+        controller: 'MainCtrl'
+      })
+
+      .when('/about', {
+        templateUrl: 'about.html',
         controller: 'MainCtrl'
       })
 
       .when('/login', {
-        templateUrl: 'views/login.html',
+        templateUrl: 'login.html',
         controller: 'LoginCtrl'
       })
 
